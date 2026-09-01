@@ -1,9 +1,12 @@
-# SPARK V4 — Cloudflare Pages
+# SPARK V5 — Cloudflare Pages
 
-Šī versija ir sagatavota GitHub + Cloudflare Pages + D1.
+Jaunais vizuālais dizains + D1 satura redaktora pamats.
 
-Svarīgi:
-- Cloudflare Pages projektā D1 binding nosaukumam jābūt `DB`.
-- Datu tabulas tiek izveidotas automātiski, pirmo reizi atverot `/api/content` vai `/api/leads`.
-- `/admin.html` ir redaktora prototips. Pirms publiskas lietošanas tas jāaizsargā ar Cloudflare Access.
-- Stripe un R2 bilžu augšupielāde vēl nav pieslēgti; tie būs nākamie moduļi.
+- `public/index.html` — publiskā mājaslapa
+- `public/noma.html` — telpu noma
+- `public/admin.html` — satura redaktors
+- `functions/api/content.js` — D1 saturs
+- `functions/api/leads.js` — pieteikumi
+- `wrangler.toml` — Cloudflare Pages + D1
+
+Nākamajā etapā: īsta attēlu augšupielāde, YouTube/Linktree/Google Reviews bloki, administratora aizsardzība ar Cloudflare Access un Stripe.

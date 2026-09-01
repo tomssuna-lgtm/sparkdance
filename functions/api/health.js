@@ -1,1 +1,1 @@
-export async function onRequestGet(){return Response.json({ok:true,service:"SPARK",version:"V4"})}
+export async function onRequestGet(){return Response.json({ok:true,service:"SPARK",version:"V5"})}
