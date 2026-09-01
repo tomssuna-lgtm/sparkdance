@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="lv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SPARK Dance Studio — Jūrmala</title>
+<meta name="description" content="SPARK — profesionāla deju studija Jūrmalā. Sporta dejas bērniem un pieaugušajiem, LatinFemme, kāzu deja, individuālās nodarbības un telpu noma.">
+<style>
+:root{--bg:#f5efe7;--paper:#fffdf9;--ink:#211f1c;--muted:#6e675f;--gold:#b49a67;--dark:#292724;--line:#ded6cc}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+a{color:inherit;text-decoration:none}.nav{height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 5vw;border-bottom:1px solid #eee7df;position:sticky;top:0;background:rgba(255,253,249,.94);backdrop-filter:blur(12px);z-index:20}
+.logo{width:42px;height:42px;object-fit:contain}.links{display:flex;gap:28px;font-size:13px}.cta{background:var(--dark);color:#fff;padding:13px 22px;border-radius:28px;font-weight:700;font-size:13px}
+.hero{display:grid;grid-template-columns:1fr 1fr;min-height:650px;background:var(--bg)}.hero-copy{padding:110px 8vw 80px;display:flex;flex-direction:column;justify-content:center}.eyebrow{text-transform:uppercase;letter-spacing:3px;color:var(--gold);font-weight:700;font-size:11px}.hero h1{font-family:Georgia,serif;font-size:clamp(56px,7vw,105px);line-height:.9;margin:24px 0;color:var(--ink)}.hero h1 span{color:var(--gold)}.hero p{max-width:530px;color:var(--muted);font-size:17px;line-height:1.6}.hero-media{min-height:650px;overflow:hidden;background:#111}.hero-media video,.hero-media img{width:100%;height:100%;object-fit:cover}.section{padding:110px 8vw}.split{display:grid;grid-template-columns:1fr 1fr;gap:8vw;align-items:start}.display{font-family:Georgia,serif;font-size:clamp(45px,5vw,76px);line-height:.95;margin:0}.gold{color:var(--gold)}.muted{color:var(--muted);line-height:1.7}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:45px}.stat{border-top:1px solid var(--ink);padding-top:16px}.stat b{font:700 32px Georgia,serif}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:45px}.card{border:1px solid var(--line);padding:28px;background:#fff}.card h3{font:26px Georgia,serif;margin:0 0 10px}.tag{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:700}.trainer{display:grid;grid-template-columns:280px 1fr;gap:45px;align-items:center}.trainer img{width:100%;aspect-ratio:4/5;object-fit:cover}.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.gallery img{width:100%;aspect-ratio:1/1;object-fit:cover;cursor:pointer;transition:transform .35s}.gallery img:hover{transform:scale(.98)}.rental{background:var(--dark);color:#fff}.rental .muted{color:#d6d0c9}.footer{padding:45px 8vw;display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.88);display:none;align-items:center;justify-content:center;z-index:100;padding:30px}.lightbox.open{display:flex}.lightbox img{max-width:92vw;max-height:88vh;object-fit:contain}.close{position:absolute;right:25px;top:18px;color:#fff;font-size:32px;cursor:pointer}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}.reveal.show{opacity:1;transform:none}
+@media(max-width:800px){.links{display:none}.hero{grid-template-columns:1fr}.hero-media{min-height:52vh;order:-1}.hero-copy{padding:70px 7vw}.split,.trainer{grid-template-columns:1fr}.cards,.gallery{grid-template-columns:1fr 1fr}.section{padding:75px 7vw}.footer{flex-direction:column}.stats{gap:10px}}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a href="#top"><img class="logo" src="/assets/spark-logo.png" alt="SPARK"></a>
+  <div class="links"><a href="#par-spark">Par SPARK</a><a href="#nodarbibas">Nodarbības</a><a href="#treneris">Treneris</a><a href="#galerija">Galerija</a><a href="#kontakti">Kontakti</a></div>
+  <a class="cta" href="#kontakti">Pieteikties</a>
+</nav>
+
+<main id="top">
+<section class="hero">
+  <div class="hero-copy">
+    <div class="eyebrow">Deju studija · Jūrmala</div>
+    <h1 id="heroTitle">Vieta, kur<br><span>uzmirdzēt.</span></h1>
+    <p id="heroText">Profesionāla deju vide Jūrmalā, kur iedvesmoties, attīstīties un sasniegt rezultātus.</p>
+    <a class="cta" style="display:inline-block;margin-top:18px;max-width:250px;text-align:center" href="#kontakti">Pieteikties nodarbībai →</a>
+  </div>
+  <div class="hero-media">
+    <video id="heroVideo" autoplay muted loop playsinline poster="/assets/spark_montage.jpg">
+      <source src="/assets/deju studija jurmalā - spark (2).mp4" type="video/mp4">
+    </video>
+  </div>
+</section>
+
+<section class="section reveal" id="par-spark">
+  <div class="split">
+    <h2 class="display" id="aboutTitle">Profesionāla vide.<br>Spēcīga komanda.<br><span class="gold">Ambīcijas.</span></h2>
+    <div>
+      <p class="muted" id="aboutText">SPARK tika izveidota 2025. gada janvārī ar jaunu skatījumu uz deju un mērķi veidot vidi, kurā aug nākamās paaudzes augsta līmeņa dejotāji.</p>
+      <p class="muted">Vieta, kur viens otru respektē, iedvesmojas un ir tendēti uz rezultātu.</p>
+      <div class="stats"><div class="stat"><b>40+</b><br><small>dejotāji</small></div><div class="stat"><b>4</b><br><small>treneri</small></div><div class="stat"><b>2025</b><br><small>SPARK sākums</small></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section reveal" id="nodarbibas">
+  <div class="eyebrow">Nodarbības</div>
+  <h2 class="display" style="margin-top:18px">Atrodi savu<br><span class="gold">dejas ritmu.</span></h2>
+  <div class="cards" id="classes"></div>
+</section>
+
+<section class="section reveal" id="treneris" style="background:var(--bg)">
+  <div class="eyebrow">Studijas vadītāja</div>
+  <div class="trainer" style="margin-top:25px">
+    <img src="/assets/Deju-trenere-Paula-Kukute.jpg" alt="SPARK studijas vadītāja">
+    <div><h2 class="display" style="font-size:clamp(42px,5vw,70px)">Paula<br><span class="gold">Kukute.</span></h2>
+    <p class="muted" id="paulaText">Paula ikdienā ir deju pasniedzēja, kas strādā ar pirmsskolas, skolas vecuma bērniem, kā arī pieaugušajiem.</p>
+    <p class="muted">Savas deju gaitas Paula uzsāka jau 5 gadu vecumā, ir vairākkārtēja Latvijas čempione un Eiropas kausa fināliste Latīņamerikas dejās. Viņa ir piedalījusies šovā “Dejo ar Zvaigzni” un šobrīd vada nodarbības un ir sacensību tiesnese.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section reveal" id="galerija">
+  <div class="eyebrow">SPARK dzīve</div>
+  <h2 class="display" style="margin-top:18px">Momenti, kas<br><span class="gold">paliek.</span></h2>
+  <div class="gallery" id="gallery" style="margin-top:45px"></div>
+</section>
+
+<section class="section rental reveal" id="noma">
+  <div class="split">
+    <div><div class="eyebrow" style="color:#cbb37e">Telpu noma</div><h2 class="display" style="margin-top:18px">Telpa idejām.<br>Telpa kustībai.</h2></div>
+    <div><p class="muted">SPARK studijas telpa pieejama nodarbībām, privātiem treniņiem, fotosesijām, filmēšanām un citiem projektiem.</p><a class="cta" href="/noma.html" target="_blank" rel="noopener">Apskatīt telpu nomu →</a></div>
+  </div>
+</section>
+
+<section class="section reveal" id="kontakti">
+  <div class="split">
+    <div><div class="eyebrow">Pievienojies SPARK</div><h2 class="display" style="margin-top:18px">Sāc savu<br><span class="gold">dejas stāstu.</span></h2></div>
+    <div><p class="muted">📍 Jomas iela 28, Jūrmala<br>📩 spark.studija@gmail.com<br>📞 28628004</p><a class="cta" href="mailto:spark.studija@gmail.com?subject=SPARK%20pieteikums">Pieteikties →</a></div>
+  </div>
+</section>
+</main>
+
+<footer class="footer"><span>© SPARK Dance Studio — Jūrmala</span><span>Vieta, kur uzmirdzēt.</span></footer>
+<div class="lightbox" id="lightbox"><div class="close" id="close">×</div><img id="lightboxImg" alt=""></div>
+
+<script>
+const fallbackClasses=[
+ {title:"Sporta dejas bērniem",tag:"4–12 gadi",text:"Sporta deju pamati, stāja, koordinācija, ritma izjūta un iespēja augt līdz sacensību līmenim."},
+ {title:"LatinFemme",tag:"Sievietēm",text:"Latīņamerikas ritmi, plastiskums, sievišķība, pašapziņa un horeogrāfija. Piemērots arī no 0."},
+ {title:"Deju vakari & pieaugušie",tag:"Pieaugušajiem",text:"Balles dejas pāriem, grupu un individuālās nodarbības dažādiem līmeņiem."},
+ {title:"Kāzu pirmā deja",tag:"Pāriem",text:"Individuāla pirmās dejas iestudēšana, dziesmas pielāgošana un unikāla horeogrāfija."},
+ {title:"Individuālās nodarbības",tag:"Individuāli",text:"Sporta dejas, LatinFemme un kāzu deja ar profesionālu treneri."}
+];
+const imgs=["deju studija jurmalā - spark (13).jpeg","deju studija jurmalā - spark (14).jpeg","deju studija jurmalā - spark (18).jpeg","deju studija jurmalā - spark (19).jpeg","deju studija jurmalā - spark (20).jpeg","deju studija jurmalā - spark (9).jpeg"];
+function renderClasses(items){document.querySelector("#classes").innerHTML=items.map(x=>`<article class="card"><div class="tag">${x.tag||""}</div><h3>${x.title}</h3><p class="muted">${x.text||""}</p></article>`).join("")}
+function renderGallery(items){document.querySelector("#gallery").innerHTML=items.map(src=>`<img src="${src}" alt="SPARK deju studija" loading="lazy">`).join("");document.querySelectorAll("#gallery img").forEach(img=>img.onclick=()=>{document.querySelector("#lightboxImg").src=img.src;document.querySelector("#lightbox").classList.add("open")})}
+renderClasses(fallbackClasses);renderGallery(imgs.map(x=>"/assets/"+x));
+document.querySelector("#close").onclick=()=>document.querySelector("#lightbox").classList.remove("open");
+document.querySelector("#lightbox").onclick=e=>{if(e.target.id==="lightbox")e.currentTarget.classList.remove("open")};
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add("show")}),{threshold:.08});document.querySelectorAll(".reveal").forEach(x=>io.observe(x));
+fetch("/api/content").then(r=>r.ok?r.json():null).then(d=>{if(!d)return;if(d.heroTitle)document.querySelector("#heroTitle").innerHTML=d.heroTitle;if(d.heroText)document.querySelector("#heroText").textContent=d.heroText;if(d.aboutTitle)document.querySelector("#aboutTitle").innerHTML=d.aboutTitle;if(d.aboutText)document.querySelector("#aboutText").textContent=d.aboutText;if(d.paulaText)document.querySelector("#paulaText").textContent=d.paulaText;if(Array.isArray(d.classes))renderClasses(d.classes);if(Array.isArray(d.gallery)&&d.gallery.length)renderGallery(d.gallery);if(d.heroVideo){const s=document.querySelector("#heroVideo source");s.src=d.heroVideo;document.querySelector("#heroVideo").load()}}).catch(()=>{});
+</script>
+</body></html>
